@@ -127,7 +127,6 @@ s3transfer==0.11.2
 safetensors==0.5.3
 scipy==1.15.2
 segments==2.3.0
-sepolicy @ file:///builddir/build/BUILD/selinux-3.7/python/sepolicy
 setools==4.5.1
 setuptools==69.0.3
 shellingham==1.5.4
@@ -168,4 +167,3 @@ soundfile
 torch
 setuptools
 wheel
-
