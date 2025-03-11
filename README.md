@@ -69,17 +69,25 @@ FLASK_ENV=development flask run
 
 
 ###  📂 **Estructura del Proyecto** 
-tts-web-app/
+tts-web-app/ </br>
 │── static/               # Archivos estáticos (CSS, JS, audios) </br>
 │   ├── audio/            # Aquí se guardan los archivos generados </br>
-│   ├── css/              # Hojas de estilo CSS
+│   ├── css/              # Hojas de estilo CSS </br>
 │── templates/            # Archivos HTML (Frontend) </br>
-│   ├── index.html        # Página principal
-│   ├── result.html       # Página de descarga
+│   ├── index.html        # Página principal </br>
+│   ├── result.html       # Página de descarga </br>
 │── venv/                 # Entorno virtual (se crea después de activar venv) </br>
-│── app.py                # Código principal de la aplicación Flask
-│── requirements.txt      # Lista de dependencias de Python
-│── README.md             # Este archivo 😃
+│── app.py                # Código principal de la aplicación Flask </br>
+│── requirements.txt      # Lista de dependencias de Python </br>
+│── README.md             # Este archivo 😃 </br>
 
 
+📤 **Subir Cambios a GitHub**
+
+Si realizas cambios en el código y quieres subirlos a GitHub:
+```bash
+git add .
+git commit -m "Descripción del cambio"
+git push origin main
+```
 
