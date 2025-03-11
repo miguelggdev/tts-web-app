@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Generado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 ¡Audio Generado con Éxito! 🎵</h1>
+        <audio controls>
+            <source src="{{ url_for('static', filename='audio/' + audio_file) }}" type="audio/wav">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        <br>
+        <a href="{{ url_for('download', filename=audio_file) }}" class="btn">⬇️ Descargar Audio</a>
+        <a href="/" class="btn">🔄 Generar Nuevo Audio</a>
+    </div>
+</body>
+</html>

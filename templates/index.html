@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        function showLoading() {
+            document.getElementById("loading").style.display = "block";
+            document.getElementById("form-container").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🗣️ Convierte Texto en Voz</h1>
+        <div id="form-container">
+            <form action="/synthesize" method="post" onsubmit="showLoading()">
+                <textarea name="text" rows="4" placeholder="Escribe tu texto aquí..."></textarea>
+                <br>
+                <button type="submit">🎙️ Generar Audio</button>
+            </form>
+        </div>
+        <div id="loading" class="hidden">
+            <p>🎧 Generando audio... Por favor, espera...</p>
+            <div class="spinner"></div>
+        </div>
+    </div>
+</body>
+</html>
