@@ -22,9 +22,10 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en **Linux Fedora 
 ### 📌 **1. Instalar Python 3 y pip**  
 ```bash
 sudo dnf install python3 python3-pip -y
+```
 
 ### 📌 **2. Instalar dependencias del sistema**
 Algunas bibliotecas como espeak-ng son necesarias para Kokoro. Instálalas con:
 ```bash
 sudo dnf install espeak-ng -y
-
+```
