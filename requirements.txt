@@ -24,7 +24,6 @@ curated-transformers==0.1.1
 cymem==2.0.11
 Cython==3.0.9
 dasbus==1.7
-dbus-python==1.3.2
 distlib==0.3.7
 distro==1.9.0
 dlinfo==2.0.0
